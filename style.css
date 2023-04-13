@@ -115,3 +115,9 @@ li{
     border: 1px solid #8d8888;
     border-radius: 5%;
 }
+.zoom {
+  transition: transform .2s; 
+}
+
+.zoom:hover {
+  transform: scale(1.06); 
