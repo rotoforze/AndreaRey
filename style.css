@@ -44,7 +44,6 @@ li{
 }
 #foto{
     background-color: #323031;
-    size-adjust:inherit;
     display: flex;
     height: 50%;
     text-align: center;
