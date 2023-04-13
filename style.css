@@ -51,6 +51,7 @@ li{
     margin-top: 5%;
     padding-bottom: 5%;
     border-bottom: 1px solid #C1BDB3;
+    justify-content: center;
 
 }
 #foto img{
