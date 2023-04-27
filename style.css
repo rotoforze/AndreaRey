@@ -42,11 +42,15 @@ li{
     background-color: #323031;
     width: 30%;
     height: 97vh;
-    font-size: 130%;
+    font-size: 2.4vh;
     font-family: 'Times New Roman', Times, serif;
     border-right: 1px solid #C1BDB3;
-
 }
+@media only screen and (max-width: 320px) {
+    #izq { 
+       font-size: 2em; 
+    }
+ }
 #foto{
     background-color: #323031;
     display: flex;
@@ -62,8 +66,13 @@ li{
 #foto img{
     border:2px solid #C1BDB3;
     border-radius: 1%;
-    max-width:100%
+    object-fit: cover;
 }
+@media only screen and (max-width: 480px) {
+    img {
+      width: 100%;
+    }
+  }
 #contacto{
     background-color: #323031;
     margin-left: 5%;
@@ -96,9 +105,9 @@ li{
     margin-top: 2%;
 }
 #info{
+    font-size: 3.5vh;
     margin-top: 5%;
     text-align: left;
-    font-size: 150%;
     size-adjust:inherit;
     padding-left: 5%;
     padding-right: 5%;
@@ -107,6 +116,11 @@ li{
 #info div{
     margin:1%;
 }
+@media only screen and (max-width: 320px) {
+    #der { 
+       font-size: 4em; 
+    }
+ }
 /*GALERIA*/
 #info img{
     width: 128px;
@@ -121,3 +135,4 @@ li{
 
 .zoom:hover {
   transform: scale(1.06); 
+}
