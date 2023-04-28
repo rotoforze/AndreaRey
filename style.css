@@ -6,6 +6,7 @@
     padding: 0;
     color:#ffffff;
     background-color: #323031;
+    overflow: auto;
 }
 #galeria{
     position:absolute;
@@ -13,7 +14,7 @@
     width: 20px;
     margin-left: -1.5%;
     background: none !important;
-}
+    overflow: visible;
 #galeria img{
     height: 300%;
     width: 300%;
