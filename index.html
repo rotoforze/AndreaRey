@@ -3,16 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <title>Sobre mi</title>
     <link rel="icon" sizes="196x196" href="./IMAGE/IMG_0444.PNG">
+    <style>/* Made by twitter.com/@rotoforze */
+
+        /*SOBRE MI*/
+        *{
+            margin: 0;
+            padding: 0;
+            color:#ffffff;
+            background-color: #323031;
+            overflow: auto;
+        }
+        #galeria{
+            position:absolute;
+            height: 20px;
+            width: 20px;
+            margin-left: -1.5%;
+            background: none !important;
+            overflow: visible;
+        }
+        #galeria img{
+            height: 300%;
+            width: 300%;
+            border: 1px solid #C1BDB3;
+            border-radius: 30%;
+            background: none !important;
+        }
+        #galeria a{
+            background: none !important;
+        }
+        #container{ 
+            width: 95%;
+            height: 95%;
+            margin: 10px auto;
+        }
+        main{
+            background-color: #323031;
+            display: flex;
+            flex-direction: row;
+        }
+        li{
+            list-style: none;
+            margin-top: 0.3%;
+        }
+        #izq{
+            background-color: #323031;
+            width: 30%;
+            height: 97vh;
+            font-size: 2.4vh;
+            font-family: 'Times New Roman', Times, serif;
+            border-right: 1px solid #C1BDB3;
+        }
+        @media only screen and (max-width: 320px) {
+            #izq { 
+               font-size: 2em; 
+            }
+         }
+        #foto{
+            background-color: #323031;
+            display: flex;
+            height: 50%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: 5%;
+            padding-bottom: 5%;
+            border-bottom: 1px solid #C1BDB3;
+            justify-content: center;
+        
+        }
+        #foto img{
+            border:2px solid #C1BDB3;
+            border-radius: 1%;
+            object-fit: cover;
+        }
+        @media only screen and (max-width: 480px) {
+            img {
+              width: 100%;
+            }
+          }
+        #contacto{
+            background-color: #323031;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding-top: 5%;
+            border-bottom: 1px solid #C1BDB3;
+            padding-bottom: 5%;
+            
+        }
+        #hovercontact:hover{
+            color:#8d8888;
+        }
+        #herramientas{
+            background-color: #323031;
+            text-align: left;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 5%;
+            padding-top: 5%;
+        }
+        .der{
+            background-color: #323031;
+            width: 70%;
+            height: 97vh;
+        } 
+        #titulo{
+            font-size: 240%;
+            text-align: center;
+            size-adjust:inherit;
+            margin-top: 2%;
+        }
+        #info{
+            font-size: 3.5vh;
+            margin-top: 5%;
+            text-align: left;
+            size-adjust:inherit;
+            padding-left: 5%;
+            padding-right: 5%;
+            
+        }
+        #info div{
+            margin:1%;
+        }
+        @media only screen and (max-width: 320px) {
+            .der { 
+               font-size: 4em; 
+            }
+         }
+        /*GALERIA*/
+        #info img{
+            width: 128px;
+            height: 128px;
+            position: relative;
+            border: 1px solid #8d8888;
+            border-radius: 5%;
+        }
+        .zoom {
+          transition: transform .2s; 
+        }
+        
+        .zoom:hover {
+          transform: scale(1.06); 
+        }
+        </style>
     <!-- Made by twitter.com/@rotoforze -->
 </head>
 <body>
     <main id="container">
         <div  id="galeria"> 
-            <a href="gallery.html" id="hovercontact"><img src="./IMAGE/IMG_0445.PNG" alt="galeria"></a>
+            <a id="hovercontact" class="btn"><img src="./IMAGE/IMG_0445.PNG" alt="galeria"></a>
         </div>
         <div id="izq">
             <div id="foto">
@@ -51,7 +191,7 @@
                 </ul>
             </div>
         </div>
-        <div id="der">
+        <div class="der" id="aboutme">
             <div id="titulo">
                 <h1>Sobre mi</h1>
             </div>
@@ -68,6 +208,33 @@ La experiencia laboral que poseo en realizando emoticonos y diseños de stream p
                 </div>
             </div>
         </div>
+        <div class="der" id="gal" hidden="true">
+            <div id="titulo">
+                <h1>Galería</h1>
+            </div>
+            <div id="info">
+                <img src="IMAGE/IMG_0413.PNG" class="zoom" onclick="window.open(this.src)">
+                <img src="IMAGE/IMG_0414.PNG" class="zoom" onclick="window.open(this.src)">
+                <img src="IMAGE/IMG_0415.PNG" class="zoom" onclick="window.open(this.src)">
+                <img src="IMAGE/IMG_0416.PNG" class="zoom" onclick="window.open(this.src)">
+                <img src="IMAGE/IMG_0417.PNG" class="zoom" onclick="window.open(this.src)">
+                <img src="IMAGE/IMG_0418.PNG" class="zoom" onclick="window.open(this.src)">
+                <img src="IMAGE/IMG_0419.PNG" class="zoom" onclick="window.open(this.src)">
+                <img src="IMAGE/IMG_0421.JPG" class="zoom" onclick="window.open(this.src)">
+                <img src="IMAGE/IMG_0422.JPG" class="zoom" onclick="window.open(this.src)">
+                <img src="IMAGE/IMG_0424.JPG" class="zoom" onclick="window.open(this.src)">
+                <img src="IMAGE/IMG_0425.JPG" class="zoom" onclick="window.open(this.src)">
+                <img src="IMAGE/IMG_0427.JPG" class="zoom" onclick="window.open(this.src)">
+                <img src="IMAGE/IMG_0429.JPG" class="zoom" onclick="window.open(this.src)">
+                <img src="IMAGE/IMG_0431.JPG" class="zoom" onclick="window.open(this.src)">
+                <img src="IMAGE/IMG_0432.JPG" class="zoom" onclick="window.open(this.src)">
+                <img src="IMAGE/IMG_0434.JPG" class="zoom" onclick="window.open(this.src)">
+                <img src="IMAGE/IMG_0435.JPG" class="zoom" onclick="window.open(this.src)">
+                <img src="IMAGE/IMG_0436.JPG" class="zoom" onclick="window.open(this.src)">
+                <img src="IMAGE/IMG_0437.JPG" class="zoom" onclick="window.open(this.src)">
+            </div>
+        </div>
     </main>
+    <script src="main.js"></script>
 </body>
 </html>
