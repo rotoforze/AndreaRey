@@ -2,6 +2,11 @@ window.onload = inicio();
 
 function inicio () {
     document.getElementById("galeria").addEventListener("click", sw); // El clicker para cambiar entre sobre mi y la galería
+    document.getElementById("galeria").addEventListener("mouseenter", cursor); // Para cambiar el cursor y hacer feedback al usuario 
+}
+
+function cursor() {
+    document.getElementById("galeria").style.cursor="pointer"; // Cambiamos el cursor
 }
 
 let am = document.getElementById("aboutme"); // Acortamos código
